@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ajax Weather</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/slate/bootstrap.min.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header"></div>
+    <div id="content">
+      <div class="container">
+
+        <div class="row">
+          <div id="topBox" class="col-md-12">
+            <img id="logo" src="watsonWeather.png" alt="logo">
+          </div>
+        </div>
+
+        <div id="textButton" class="row">
+          <div id="middleBox" class="col-md-6">
+            <input type="text" id='inputCS' class="form-control" placeholder="CITY, ST">
+          </div>
+          <div id="mid2Box" class="col-md-6">
+            <button type="submit" id="go" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+        <h4 id="query"></h4>
+        <div class="row">
+          <table class="hidden">
+            <tbody>
+              <tr>
+                <td>
+                  <p id="one"></p>
+                </td>
+                <td>
+                  <div id="Temperature" class="col-md-6">
+                    <h3 id="outputTemp"></h3>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p id="two"></p>
+                </td>
+                <td>
+                  <div id="weatherImage" class="col-md-6">
+                    <img id="icon">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="progress progress-striped active" id="hiddenBar">
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <ul>
+          <li>
+            <img id="wunder" src="http://icons.wxug.com/graphics/wu2/logo_130x80.png" alt="wunderground_img">
+          </li>
+          <li>
+            <h6>Data Sourced From <a href="http://www.wunderground.com"><b><i>wunderground.com</i></b></a></h6>
+          </li>
+        </ul>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script src="main.js"></script>
+    </div>
+  </div>
+</body>
+</html>
